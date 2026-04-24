@@ -7,12 +7,10 @@
     "dev": "tsc && node dist/server.js",
     "build": "tsc",
     "start": "node dist/server.js",
-
     "docker:up": "docker compose up -d --build",
     "docker:down": "docker compose down",
     "docker:logs": "docker compose logs -f backend",
     "docker:restart": "docker compose restart backend",
-
     "prisma:migrate": "docker compose exec backend npx prisma migrate dev",
     "prisma:status": "docker compose exec backend npx prisma migrate status",
     "prisma:generate": "docker compose exec backend npx prisma generate",
@@ -45,6 +43,7 @@
     "@types/multer": "^2.1.0",
     "@types/node": "^25.6.0",
     "concurrently": "^9.2.1",
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "typescript": "^6.0.3"
   }
 }
